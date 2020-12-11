@@ -19,5 +19,12 @@ namespace PierresBakery.Models
     {
       return val / 3;
     }
+
+    public int EveryThreeForFive(int val)
+    {
+      int trios = GroupsOfThree(val);
+
+      return trios * 2;
+    }
   }
 }

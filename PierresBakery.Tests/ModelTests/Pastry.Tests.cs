@@ -28,5 +28,12 @@ namespace PierresBakery.Tests
       Pastry testPastry = new Pastry();
       Assert.AreEqual(1, testPastry.GroupsOfThree(userVal));
     }
+    [TestMethod]
+    public void EveryTheeForFive_ReturnCostOfPastryTriosWithEveryTrioAsFive_5()
+    {
+      int userVal = 5;
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(5, testPastry.EveryThreeForFive(userVal));
+    }
   }
 }
