@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PierresBakery;
 
 namespace PierresBakery.Tests
 {
@@ -6,9 +7,10 @@ namespace PierresBakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void Name_Test_Return()
+    public int[] InputReturn_ReturnGivenInput_7and5()
     {
-      
+      int[] array = new int[] {7, 5};
+      return arr;
     }
   }
     
