@@ -26,5 +26,12 @@ namespace PierresBakery.Models
 
       return trios * 5;
     }
+
+    public int AddRemainder(int val)
+    {
+      int remainder = val % 3;
+
+      return EveryThreeForFive(val) + (remainder * 20);
+    }
   }
 }
