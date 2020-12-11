@@ -31,7 +31,7 @@ namespace PierresBakery.Models
     {
       int remainder = val % 3;
 
-      return EveryThreeForFive(val) + (remainder * 20);
+      return EveryThreeForFive(val) + (remainder * 2);
     }
   }
 }
