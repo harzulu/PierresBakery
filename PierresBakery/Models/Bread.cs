@@ -17,7 +17,7 @@ namespace PierresBakery.Models
 
     public int CostOfBread(int val)
     {
-      return val * 10;
+      return val * 5;
     }
   }
 }
