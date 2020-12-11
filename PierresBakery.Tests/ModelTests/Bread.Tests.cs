@@ -12,7 +12,12 @@ namespace PierresBakery.Tests
       int num = 7;
       Bread testBread = new Bread();
       Assert.AreEqual(7, testBread.InputReturn(num));
-
+    }
+    [TestMethod]
+    public void BreadPrice_ReturnPriceOfBread_5()
+    {
+      Bread testBread = new Bread();
+      Assert.AreEqual(5, testBread.BreadPrice());
     }
   }
     

@@ -9,5 +9,10 @@ namespace PierresBakery.Models
     {
     return num;
     }
+
+    public int BreadPrice()
+    {
+      return 12;
+    }
   }
 }
