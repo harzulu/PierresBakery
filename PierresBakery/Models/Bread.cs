@@ -37,7 +37,7 @@ namespace PierresBakery.Models
     {
       int reamainder = val % 3;
 
-      return EveryThirdFree(val) + (reamainder * 10);
+      return EveryThirdFree(val) + (reamainder * 5);
     }
   }
 }
