@@ -28,7 +28,7 @@ namespace PierresBakery.Models
     public int EveryThirdFree(int val)
     {
       int trios = GroupsOfThree(val);
-      int bread = trios * 20;
+      int bread = trios * 3;
 
       return CostOfBread(bread - trios);
     }
