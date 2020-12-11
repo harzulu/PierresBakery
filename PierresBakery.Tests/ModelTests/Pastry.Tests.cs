@@ -7,8 +7,10 @@ namespace PierresBakery.Tests
   public class PastryTests
   {
     [TestMethod]
-    public void Name_Test_Return()
+    public void PastryPrice_ReturnPriceOfOnePastry_2()
     {
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(2, testPastry.PastryPrice());
       
     }
   }
