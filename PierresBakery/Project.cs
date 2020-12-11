@@ -21,6 +21,17 @@ namespace PierresBakery.Models
       Console.WriteLine("Your total for bread is: $" + breadClass.AddRemainder() + ".");
       Console.WriteLine("And your total for pastries is: $" + pastryClass.AddRemainder() + ".");
       Console.WriteLine("Your total today is: $" + (breadClass.AddRemainder() + pastryClass.AddRemainder()) + ".");
+
+      Console.WriteLine("Would you like to shop again? Y/N");
+      string choice = Console.ReadLine();
+
+      if (choice == "Y")
+      {
+        Program.Main();
+      } else
+      {
+        Console.WriteLine("Have a great day!");
+      }
     }
   }
 }
