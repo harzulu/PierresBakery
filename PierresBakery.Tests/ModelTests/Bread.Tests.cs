@@ -9,7 +9,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public int[] InputReturn_ReturnGivenInput_7and5()
     {
-      int[] array = new int[] {7, 5};
+      int[] arr = new int[] {7, 5};
       return arr;
     }
   }
