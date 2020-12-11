@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierresBakery;
+using PierresBakery.Models;
 
 namespace PierresBakery.Tests
 {
@@ -7,10 +7,12 @@ namespace PierresBakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public int[] InputReturn_ReturnGivenInput_7and5()
+    public void InputReturn_ReturnGivenInput_7()
     {
-      int[] arr = new int[] {7, 5};
-      return arr;
+      int num = 12;
+      Bread testBread = new Bread();
+      Assert.AreEqual(7, testBread.InputReturn(num));
+
     }
   }
     
