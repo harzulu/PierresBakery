@@ -52,12 +52,11 @@ Go shopping at Pierre's Bakery and see what baked goods you'd like and how much 
 
 | Spec                                            | Input                        | Output                        |
 | :---------------------------------------------- | :--------------------------- | :---------------------------- |
-| **Returns user input for number of bread loaves and pastries** | {7, 5} | {7, 5} |
+| **Returns user input for number of bread loaves or pastries** | 7 | 7 |
 | **Returns the price of one bread loaf** |  | 5 |
 | **Returns the price of one pastry** |  | 2 |
 | **Returns the cost of the number of loaves the user entered** | 7 | 35 |
 | **Returns the cost of the number of pastries the user entered** | 5 | 10 |
-| **Returns the total cost of bread and pastries** | {7, 5} | 25 |
 | **Return the how many groups of 3 are there of bread** | 7 | 2 |
 | **Returns cost of bread with every 3rd free** | 7 | 25 |
 | **Returns how many groups of 3 there are of pastries** | 5 | 1 |
@@ -68,9 +67,9 @@ Go shopping at Pierre's Bakery and see what baked goods you'd like and how much 
 
 ### Tests
 
-Describe: InputReturn(list)
+Describe: InputReturn(num)
 Test: "Return the given input"
-Expect: InputReturn({7, 5}).toEqual({7, 5})
+Expect: InputReturn(7).toEqual(7)
 
 Describe: BreadPrice()
 Test: "Return the price of one loaf of bread"
@@ -87,10 +86,6 @@ Expect: BreadCost(7).toEqual(35)
 Describe: PastryCost(5)
 Test: "Return the cost of number of pastries entered"
 Expect: PastryCost(5).toEqual(10)
-
-Describe: NoDealTotal({7, 5})
-Test: "Return the total cost of bread and pastries without deals"
-Expect: NoDealTotal({7, 5}).toEqual(45)
 
 Describe: BreadGroupOfThree(7)
 Test: "Return the number of groups of 3 of bread"
