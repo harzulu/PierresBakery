@@ -1,4 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
 using PierresBakery.Models;
 
 namespace PierresBakery.Tests
@@ -25,6 +27,13 @@ namespace PierresBakery.Tests
       int userVal = 7;
       Bread testBread = new Bread();
       Assert.AreEqual(35, testBread.CostOfBread(userVal));
+    }
+    [TestMethod]
+    public void GroupsOfThree_ReturnNumberOfGroupsOfThreeOfBread_2()
+    {
+      int userVal = 7;
+      Bread testBread = new Bread();
+      Assert.AreEqual(2, testBread.GroupsOfThree(userVal));
     }
   }
     
