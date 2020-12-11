@@ -24,7 +24,7 @@ namespace PierresBakery.Models
     {
       int trios = GroupsOfThree(val);
 
-      return trios * 2;
+      return trios * 5;
     }
   }
 }
