@@ -9,5 +9,10 @@ namespace PierresBakery.Models
     {
       return 2;
     }
+
+    public int CostOfPastry(int val)
+    {
+      return val * 10;
+    }
   }
 }
