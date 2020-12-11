@@ -21,5 +21,12 @@ namespace PierresBakery.Tests
       Pastry testPastry = new Pastry();
       Assert.AreEqual(10, testPastry.CostOfPastry(userVal));
     }
+    [TestMethod]
+    public void GroupsOfThree_ReturnNumberOfGroupsOfThreeOfPastries_1()
+    {
+      int userVal = 5;
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(1, testPastry.GroupsOfThree(userVal));
+    }
   }
 }

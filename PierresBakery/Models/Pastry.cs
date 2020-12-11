@@ -14,5 +14,10 @@ namespace PierresBakery.Models
     {
       return val * 2;
     }
+
+        public int GroupsOfThree(int val)
+    {
+      return val / 6;
+    }
   }
 }
