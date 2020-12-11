@@ -5,33 +5,39 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
+    public int NumOfPastry { get; set; }
+
+    public Pastry(int val)
+    {
+      NumOfPastry = val;
+    }
     public int PastryPrice()
     {
       return 2;
     }
 
-    public int CostOfPastry(int val)
+    public int CostOfPastry()
     {
-      return val * 2;
+      return NumOfPastry * 2;
     }
 
-        public int GroupsOfThree(int val)
+        public int GroupsOfThree()
     {
-      return val / 3;
+      return NumOfPastry / 3;
     }
 
-    public int EveryThreeForFive(int val)
+    public int EveryThreeForFive()
     {
-      int trios = GroupsOfThree(val);
+      int trios = GroupsOfThree();
 
       return trios * 5;
     }
 
-    public int AddRemainder(int val)
+    public int AddRemainder()
     {
-      int remainder = val % 3;
+      int remainder = NumOfPastry % 3;
 
-      return EveryThreeForFive(val) + (remainder * 2);
+      return EveryThreeForFive() + (remainder * 2);
     }
   }
 }

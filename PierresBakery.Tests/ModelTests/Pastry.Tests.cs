@@ -11,37 +11,32 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void PastryPrice_ReturnPriceOfOnePastry_2()
     {
-      Pastry testPastry = new Pastry();
+      Pastry testPastry = new Pastry(5);
       Assert.AreEqual(2, testPastry.PastryPrice());
     }
     [TestMethod]
     public void CostOfPastry_ReturnCostOfPastryUserEntered_10()
     {
-      int userVal = 5;
-      Pastry testPastry = new Pastry();
-      Assert.AreEqual(10, testPastry.CostOfPastry(userVal));
+      Pastry testPastry = new Pastry(5);
+      Assert.AreEqual(10, testPastry.CostOfPastry());
     }
     [TestMethod]
     public void GroupsOfThree_ReturnNumberOfGroupsOfThreeOfPastries_1()
     {
-      int userVal = 5;
-      Pastry testPastry = new Pastry();
-      Assert.AreEqual(1, testPastry.GroupsOfThree(userVal));
+      Pastry testPastry = new Pastry(5);
+      Assert.AreEqual(1, testPastry.GroupsOfThree());
     }
     [TestMethod]
     public void EveryTheeForFive_ReturnCostOfPastryTriosWithEveryTrioAsFive_5()
     {
-      int userVal = 5;
-      Pastry testPastry = new Pastry();
-      Assert.AreEqual(5, testPastry.EveryThreeForFive(userVal));
+      Pastry testPastry = new Pastry(5);
+      Assert.AreEqual(5, testPastry.EveryThreeForFive());
     }
-
     [TestMethod]
     public void AddRemainder_ReturnCostOfPastriesWithTriosAndRemainder_9()
     {
-      int userVal = 5;
-      Pastry testPastry = new Pastry();
-      Assert.AreEqual(9, testPastry.AddRemainder(userVal));
+      Pastry testPastry = new Pastry(5);
+      Assert.AreEqual(9, testPastry.AddRemainder());
     }
   }
 }

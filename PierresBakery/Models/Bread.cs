@@ -5,9 +5,15 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    public int InputReturn(int num)
+    public int NumOfBread { get; set; }
+
+    public Bread(int val)
     {
-    return num;
+      NumOfBread = val;
+    }
+    public int InputReturn()
+    {
+    return NumOfBread;
     }
 
     public int BreadPrice()
@@ -15,29 +21,29 @@ namespace PierresBakery.Models
       return 5;
     }
 
-    public int CostOfBread(int val)
+    public int CostOfBread()
     {
-      return val * 5;
+      return NumOfBread * 5;
     }
 
-    public int GroupsOfThree(int val)
+    public int GroupsOfThree()
     {
-      return val / 3;
+      return NumOfBread / 3;
     }
 
-    public int EveryThirdFree(int val)
+    public int EveryThirdFree()
     {
-      int trios = GroupsOfThree(val);
+      int trios = GroupsOfThree();
       int bread = trios * 3;
 
-      return CostOfBread(bread - trios);
+      return (bread - trios) * 5;
     }
 
-    public int AddRemainder(int val)
+    public int AddRemainder()
     {
-      int reamainder = val % 3;
+      int reamainder = NumOfBread % 3;
 
-      return EveryThirdFree(val) + (reamainder * 5);
+      return EveryThirdFree() + (reamainder * 5);
     }
   }
 }

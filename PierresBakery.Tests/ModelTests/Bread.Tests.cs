@@ -11,43 +11,38 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void InputReturn_ReturnGivenInput_7()
     {
-      int num = 7;
-      Bread testBread = new Bread();
-      Assert.AreEqual(7, testBread.InputReturn(num));
+      Bread testBread = new Bread(7);
+      Assert.AreEqual(7, testBread.InputReturn());
     }
     [TestMethod]
     public void BreadPrice_ReturnPriceOfBread_5()
     {
-      Bread testBread = new Bread();
+      Bread testBread = new Bread(7);
       Assert.AreEqual(5, testBread.BreadPrice());
     }
     [TestMethod]
     public void CostOfBread_ReturnCostOfBreadUserEntered_35()
     {
-      int userVal = 7;
-      Bread testBread = new Bread();
-      Assert.AreEqual(35, testBread.CostOfBread(userVal));
+      Bread testBread = new Bread(7);
+      Assert.AreEqual(35, testBread.CostOfBread());
     }
     [TestMethod]
     public void GroupsOfThree_ReturnNumberOfGroupsOfThreeOfBread_2()
     {
-      int userVal = 7;
-      Bread testBread = new Bread();
-      Assert.AreEqual(2, testBread.GroupsOfThree(userVal));
+      Bread testBread = new Bread(7);
+      Assert.AreEqual(2, testBread.GroupsOfThree());
     }
     [TestMethod]
     public void EveryThirdFree_ReturnCostOfBreadTriosWithEveryThirdFree_20()
     {
-      int userVal = 7;
-      Bread testBread = new Bread();
-      Assert.AreEqual(20, testBread.EveryThirdFree(userVal));
+      Bread testBread = new Bread(7);
+      Assert.AreEqual(20, testBread.EveryThirdFree());
     }
     [TestMethod]
     public void AddRemainder_ReturnCostOfBreadWithTriosAndRemainder_25()
     {
-      int userVal = 7;
-      Bread testBread = new Bread();
-      Assert.AreEqual(25, testBread.AddRemainder(userVal));
+      Bread testBread = new Bread(7);
+      Assert.AreEqual(25, testBread.AddRemainder());
     }
   }
     
