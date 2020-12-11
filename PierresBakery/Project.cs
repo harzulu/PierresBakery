@@ -7,7 +7,7 @@ namespace PierreBakery.Models
   {
     public static void Main()
     {
-
+      Console.WriteLine("Welcome to Pierre's Bakery!");
     }
   }
 }

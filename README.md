@@ -52,15 +52,73 @@ Go shopping at Pierre's Bakery and see what baked goods you'd like and how much 
 
 | Spec                                            | Input                        | Output                        |
 | :---------------------------------------------- | :--------------------------- | :---------------------------- |
-| | | |
-| | | |
-| | | |
+| **Returns user input for number of bread loaves and pastries** | {7, 5} | {7, 5} |
+| **Returns the price of one bread loaf** |  | 5 |
+| **Returns the price of one pastry** |  | 2 |
+| **Returns the cost of the number of loaves the user entered** | 7 | 35 |
+| **Returns the cost of the number of pastries the user entered** | 5 | 10 |
+| **Returns the total cost of bread and pastries** | {7, 5} | 25 |
+| **Return the how many groups of 3 are there of bread** | 7 | 2 |
+| **Returns cost of bread with every 3rd free** | 7 | 25 |
+| **Returns how many groups of 3 there are of pastries** | 5 | 1 |
+| **Return cost of one group of 3** | 3 | 5 |
+| **Returns the total price of all groups of 3** | 5 | 5 |
+| **Returns the remainder of psatries added to the last total** | 5 | 9 |
+| **Returns the total for bread and pastries** | {7, 5} | 34 |
 
 ### Tests
 
-Describe: 
-Test: 
-Expect: 
+Describe: InputReturn(list)
+Test: "Return the given input"
+Expect: InputReturn({7, 5}).toEqual({7, 5})
+
+Describe: BreadPrice()
+Test: "Return the price of one loaf of bread"
+Expect: BreadPrice().toEqual(5)
+
+Describe: PastryPrice()
+Test: "Return the price of one pastry"
+Expect: PastryPrice().toEqual(2)
+
+Describe: BreadCost(7)
+Test: "Return the cost of number of loaves of bread entered"
+Expect: BreadCost(7).toEqual(35)
+
+Describe: PastryCost(5)
+Test: "Return the cost of number of pastries entered"
+Expect: PastryCost(5).toEqual(10)
+
+Describe: NoDealTotal({7, 5})
+Test: "Return the total cost of bread and pastries without deals"
+Expect: NoDealTotal({7, 5}).toEqual(45)
+
+Describe: BreadGroupOfThree(7)
+Test: "Return the number of groups of 3 of bread"
+Expect: BreadGroupOfThree(7).toEqual(2)
+
+Describe: BreadEveryThirdFree(7)
+Test: "Return the cost of bread with every 3rd free"
+Expect: BreadEveryThirdFree(7).toEqual(25)
+
+Describe: PastryGroupOfThree(5)
+Test: "Return the number of groups of 3 of pastries"
+Expect: PastryGroupOfThree(5).toEqual(1)
+
+Describe: PastryCostOfOneGroup()
+Test: "Return the cost of 3 of pastries"
+Expect: PastryCostOfOneGroup().toEqual(5)
+
+Describe: PastryCostOfGroups(5)
+Test: "Return the cost of all groups of 3 of pastries"
+Expect: PastryCostOfGroups(5).toEqual(5)
+
+Describe: PastryAddRemainder(5)
+Test: "Return the cost with remainder of pastries not in group of 3"
+Expect: PastryAddRemainder(5).toEqual(9)
+
+Describe: BakeryTotal({7, 5})
+Test: "Return the total cost of all bread and patries with deals"
+Expect: BakeryTotal({7, 5}).toEqual(34)
 
 ## Bugs / Issues
 
