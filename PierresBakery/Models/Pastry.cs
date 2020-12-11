@@ -7,7 +7,7 @@ namespace PierresBakery.Models
   {
     public int PastryPrice()
     {
-      return 12;
+      return 2;
     }
   }
 }
