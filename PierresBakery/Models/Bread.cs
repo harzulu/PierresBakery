@@ -32,5 +32,12 @@ namespace PierresBakery.Models
 
       return CostOfBread(bread - trios);
     }
+
+    public int AddRemainder(int val)
+    {
+      int reamainder = val % 3;
+
+      return EveryThirdFree(val) + (reamainder * 10);
+    }
   }
 }

@@ -42,6 +42,13 @@ namespace PierresBakery.Tests
       Bread testBread = new Bread();
       Assert.AreEqual(20, testBread.EveryThirdFree(userVal));
     }
+    [TestMethod]
+    public void AddRemainder_ReturnCostOfBreadWithTriosAndRemainder_25()
+    {
+      int userVal = 7;
+      Bread testBread = new Bread();
+      Assert.AreEqual(25, testBread.AddRemainder(userVal));
+    }
   }
     
 }
