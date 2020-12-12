@@ -45,5 +45,4 @@ namespace PierresBakery.Tests
       Assert.AreEqual(25, testBread.AddRemainder());
     }
   }
-    
 }

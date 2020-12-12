@@ -38,12 +38,12 @@ namespace PierresBakery.Models
           counter++;
         } else
         {
-          int endTotal = 0;
+          int grandTotal = 0;
           for (int i = 0; i <= counter; i++)
           {
-            endTotal += totals[i];
+            grandTotal += totals[i];
           }
-          Console.WriteLine("Your total for both is: $" + endTotal + ".");
+          Console.WriteLine("Your total for both is: $" + grandTotal + ".");
           buyMore = false;
         }
       }
