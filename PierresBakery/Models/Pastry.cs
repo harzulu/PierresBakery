@@ -21,7 +21,7 @@ namespace PierresBakery.Models
       return NumOfPastry * 2;
     }
 
-        public int GroupsOfThree()
+    public int GroupsOfThree()
     {
       return NumOfPastry / 3;
     }
